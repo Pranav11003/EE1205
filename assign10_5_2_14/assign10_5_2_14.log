@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  6 JAN 2024 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  4 FEB 2024 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1114,12 +1114,52 @@ Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-\c@theorem=\count342
-\c@problem=\count343
-\c@proposition=\count344
-\c@lemma=\count345
-\c@example=\count346
-\c@rem=\count347
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen328
+\captionmargin=\dimen329
+\caption@leftmargin=\dimen330
+\caption@rightmargin=\dimen331
+\caption@width=\dimen332
+\caption@indent=\dimen333
+\caption@parindent=\dimen334
+\caption@hangindent=\dimen335
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count342
+\c@continuedfloat=\count343
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+\c@theorem=\count344
+\c@problem=\count345
+\c@proposition=\count346
+\c@lemma=\count347
+\c@example=\count348
+\c@rem=\count349
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 3.
 
@@ -1211,16 +1251,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen328
+\scratchcounter=\count350
+\scratchdimen=\dimen336
 \scratchbox=\box83
-\nofMPsegments=\count349
-\nofMParguments=\count350
+\nofMPsegments=\count351
+\nofMParguments=\count352
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen329
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
+\MPscratchCnt=\count353
+\MPscratchDim=\dimen337
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1231,7 +1271,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count354
+\c@lstlisting=\count356
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 43.
@@ -1249,51 +1289,73 @@ Package hyperref Info: Link coloring OFF on input line 43.
 \@outlinefile=\write5
 \openout5 = `assign10_5_2_14.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
-9.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 5
-9.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 5
-9.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 5
-9.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
-9.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
+
+(./tables/table.tex)
+<figs/graph1.png, id=7, 462.528pt x 346.896pt>
+File: figs/graph1.png Graphic file (type png)
+<use figs/graph1.png>
+Package pdftex.def Info: figs/graph1.png  used on input line 78.
+(pdftex.def)             Requested size: 277.20154pt x 207.91159pt.
+
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 78--79
+ [][] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
-] (./assign10_5_2_14.aux)
+ <./figs/graph1.png>]
+(./assign10_5_2_14.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `assign10_5_2_14.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30323 strings out of 476091
- 597510 string characters out of 5794082
- 1855330 words of memory out of 5000000
- 50056 multiletter control sequences out of 15000+600000
- 568160 words of font info for 143 fonts, out of 8000000 for 9000
+ 31709 strings out of 476091
+ 624537 string characters out of 5794082
+ 1862330 words of memory out of 5000000
+ 51415 multiletter control sequences out of 15000+600000
+ 578306 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,6n,96p,1183b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,10n,96p,1183b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1302,10 +1364,10 @@ onts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign10_5_2_14.pdf (1 page, 41123 bytes).
+Output written on assign10_5_2_14.pdf (1 page, 64437 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 64 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

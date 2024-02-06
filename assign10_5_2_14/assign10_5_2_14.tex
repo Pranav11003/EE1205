@@ -54,30 +54,37 @@
 
 
 \textbf{Question}:
-no of multiples of 4 between 10 and 250
-\\let $4n_{1}$ and $4n_{2}$ be the first and last multiples of 4 between 10 and 250 then\\ 
-
- $4n_{1}>10$  $\&$ $4n_{2}<250$  \\
- $\implies$ $n_{1}>10/4$ $\&$ $n_{2}<250/4$\\
-$ \therefore$ $n_{1}$ $\&$ $n_{2}$ $\in$ $\mathbb{N}$\\
- $\implies$ $n_{1}=3$ $n_{2}=62$ \\
- $\therefore$ no of multiples of 4 between 10 and 250 are $62-3+1=60$ \\
+How many multiples of 4 lie between 10 and 250?\\
+\solution
+let $4n_{1}$ and $4n_{2}$ be the first and last multiples of 4 between 10 and 250 then
+\begin{align}
+     4n_{1}>10   \text{ and }  4n_{2}<250  \\
+ \implies n_{1}>10/4\text{ and } n_{2}<250/4\\
+ \therefore n_{1} \text{ and } n_{2} \in \mathbb{N}\\
+\implies n_{1}=3,n_{2}=62 
+\end{align}
+ $\therefore$ number of multiples of 4 which lie between  10 and 250 are $62-3+1=60$ \\
 considering the series to start from $n=0$ the general term
 \begin{align}
-S(n)=S(0)+n\cdot d\\
-S(n)=12+4\cdot n
+X(n)=[X(0)+n\cdot d].u(n)\\
+X(n)=[12+4\cdot n].u(n)
 \end{align}
 \begin{table}[h]
     \centering
-    \input{tables/Table.Tex}
+    \input{tables/table.Tex}
     \caption{Variables Used}
-    \label{tab	: 10.5.2.14}
+    \label{tab:table_11.9.3.6}
 \end{table}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/graph1.png}
     \caption{general term of the AP}
-    \label{fig:enter-label}
-\end{figure}
-
+\end{figure}\\
+applying Z transform
+\begin{align}
+    X(z)&= \sum_{n=-\infty}^{\infty}X(n)\cdot z^{-n}\\
+   \implies X(z)&= \sum_{n=-\infty}^{\infty} [12+4\cdot n]\cdot u(n)\cdot z^{-n}\\
+   \implies X(z) &=\sum_{n= 0}^{\infty} [12+4\cdot n] \cdot z^{-n}\\
+   \implies X(z)&= \frac{12}{1-z^{-1}} +\frac{4\cdot z^{-1}}{(1-z^{-1})^{2}}
+\end{align}
 \end{document}

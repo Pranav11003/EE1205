@@ -11,7 +11,7 @@ void generate_points(int max_n) {
     fprintf(file, "n,S(n)\n");
     
     for (int n = 0; n <= max_n; ++n) {
-        int sequence_value = 12 + 4 * n;
+        int sequence_value =  4 * n;
         fprintf(file, "%d,%d\n", n, sequence_value);
     }
 

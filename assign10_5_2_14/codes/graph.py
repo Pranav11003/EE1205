@@ -1,17 +1,17 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Read the generated points from the text file
-data = np.loadtxt('points.txt', delimiter=',', skiprows=1)
+# Load the generated points from the text file using numpy
+file_path = 'points.txt'
+data = np.loadtxt(file_path, delimiter=',', skiprows=1)
 
-# Extract data using NumPy array slicing
-n_values = data[:, 0]
-sequence_values = data[:, 1]
+# Extract n and S(n) from the data
+n_values = data[:, 0].astype(int)
+sequence_values = data[:, 1].astype(int)
 
-# Plot the graph
-plt.plot(n_values, sequence_values, marker='o')
-plt.title('Arithmetic Sequence: $S(n) = 12 + 4n$')
+# Plot the stem graph
+plt.stem(n_values, sequence_values, basefmt='b-', linefmt='r-', markerfmt='ro')
 plt.xlabel('n')
-plt.ylabel('S(n)')
+plt.ylabel('X(n)')
 plt.grid(True)
 plt.savefig("graph1.png")

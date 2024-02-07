@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  6 FEB 2024 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  7 FEB 2024 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1333,12 +1333,13 @@ Overfull \hbox (25.20154pt too wide) in paragraph at lines 78--79
  []
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 1 undefined on input line 89.
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 1 undefined on input line 88.
 
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 1 undefined on input line 89.
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1368,7 +1369,7 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on assign10_5_2_14.pdf (1 page, 62754 bytes).
+Output written on assign10_5_2_14.pdf (1 page, 62328 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

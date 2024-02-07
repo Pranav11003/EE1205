@@ -70,8 +70,8 @@ How many multiples of 4 lie between 10 and 250?\\
  $\therefore$ number of multiples of 4 which lie between  10 and 250 are $62-3+1=60$ \\
 considering the series to start from $n=0$ the general term
 \begin{align}
-X(n)&=[X(0)+n\cdot d].u(n)\\
-X(n)&=4n.u(n)
+X(n)&=[X(0)+nd]u(n)\\
+X(n)&=4nu(n)
 \end{align}
 \begin{figure}[h!]
     \centering
@@ -81,10 +81,12 @@ X(n)&=4n.u(n)
 
 applying Z transform
 \begin{align}
-    X(z)&= \sum_{n=-\infty}^{\infty}X(n)\cdot z^{-n}\\
-   \implies X(z)&= \sum_{n=-\infty}^{\infty} 4n\cdot u(n)\cdot z^{-n}\\
-   \implies X(z) &=\sum_{n= 0}^{\infty} 4n \cdot z^{-n}\\
+    X(z)&= \sum_{n=-\infty}^{\infty}X(n) z^{-n}\\
+   \implies X(z)&= \sum_{n=-\infty}^{\infty} 4n u(n) z^{-n}\\
+   \implies X(z) &=\sum_{n= 0}^{\infty} 4n  z^{-n}\\
+   \end{align}
    \text{from } \ref{eq:11.9.5.26.2}\\
-   \implies X(z)&=\frac{4\cdot z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
+   \begin{align}
+   \implies X(z)&=\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
 \end{align}
 \end{document}

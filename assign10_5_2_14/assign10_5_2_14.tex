@@ -64,15 +64,15 @@ How many multiples of 4 lie between 10 and 250?\\
     \label{tab:table_11.9.3.6}
 \end{table}
 \begin{align}
-     4n_{1}>10   \text{ and }  4n_{2}<250  \\
-\implies n_{1}=3,n_{2}=62  \quad (\text{as }  n \in \mathbb{N})
+    n&=\frac{250-250 \text{ mod } 2-10-10\text{ mod } 2}{4}+1\\
+    n&=60
 \end{align}
- $\therefore$ number of multiples of 4 which lie between  10 and 250 are $62-3+1=60$ \\
+ 
 considering the series to start from $n=0$ the general term
 \begin{align}
-X(n)&=[X(0)+nd]u(n)\\
-X(n)&=4nu(n)
-\end{align}
+x(n)&=[x(0)+nd]u(n)\\
+x(n)&=4nu(n)
+\end{align}i
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/graph1.png}
@@ -81,12 +81,12 @@ X(n)&=4nu(n)
 
 applying Z transform
 \begin{align}
-    X(z)&= \sum_{n=-\infty}^{\infty}X(n) z^{-n}\\
-   \implies X(z)&= \sum_{n=-\infty}^{\infty} 4n u(n) z^{-n}\\
-   \implies X(z) &=\sum_{n= 0}^{\infty} 4n  z^{-n}\\
+    x(z)&= \sum_{n=-\infty}^{\infty}x(n) z^{-n}\\
+   \implies x(z)&= \sum_{n=-\infty}^{\infty} 4n u(n) z^{-n}\\
+   \implies x(z) &=\sum_{n= 0}^{\infty} 4n  z^{-n}\\
    \end{align}
    \text{from } \ref{eq:11.9.5.26.2}\\
    \begin{align}
-   \implies X(z)&=\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
+   \implies x(z)&=\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
 \end{align}
 \end{document}

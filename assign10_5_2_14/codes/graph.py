@@ -1,17 +1,19 @@
 import matplotlib.pyplot as plt
-import numpy as np
 
-# Load the generated points from the text file using numpy
-file_path = 'points.txt'
-data = np.loadtxt(file_path, delimiter=',', skiprows=1)
+# Read values from the generated file
+with open('values.txt', 'r') as file:
+    values = [int(line.strip()) for line in file]
 
-# Extract n and S(n) from the data
-n_values = data[:, 0].astype(int)
-sequence_values = data[:, 1].astype(int)
+# Generate x values (n)
+n_values = list(range(len(values)))
 
-# Plot the stem graph
-plt.stem(n_values, sequence_values, basefmt='b-', linefmt='r-', markerfmt='ro')
+# Plotting the stem plot
+plt.stem(n_values, values, linefmt='b-', markerfmt='bo', basefmt='b-', label='x(n) = 4n')
+plt.stem(n_values[3:], values[3:], linefmt='r-', markerfmt='ro', basefmt='r-', label='n=3 to n=63')
+
+plt.title('Stem Plot of x(n) = 4n')
 plt.xlabel('n')
-plt.ylabel('X(n)')
+plt.ylabel('x(n)')
+plt.legend()
 plt.grid(True)
 plt.savefig("graph1.png")

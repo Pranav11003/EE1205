@@ -1,26 +1,17 @@
 #include <stdio.h>
 
-void generate_points(int max_n) {
-    FILE *file = fopen("points.txt", "w");
-
+int main() {
+    FILE *file = fopen("values.txt", "w");
     if (file == NULL) {
-        perror("Error opening file");
-        return;
+        fprintf(stderr, "Error opening the file for writing.\n");
+        return 1;
     }
 
-    fprintf(file, "n,S(n)\n");
-    
-    for (int n = 0; n <= max_n; ++n) {
-        int sequence_value =  4 * n;
-        fprintf(file, "%d,%d\n", n, sequence_value);
+    for (int n = 0; n <= 63; ++n) {
+        int xn = 4 * n;
+        fprintf(file, "%d\n", xn);
     }
 
     fclose(file);
-}
-
-int main() {
-    int max_n = 10;  // Adjust the maximum value of n as needed
-    generate_points(max_n);
-
     return 0;
 }

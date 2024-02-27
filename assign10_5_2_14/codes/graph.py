@@ -9,7 +9,7 @@ n_values = list(range(len(values)))
 
 # Plotting the stem plot
 plt.stem(n_values, values, linefmt='b-', markerfmt='bo', basefmt='b-', label='x(n) = 4n')
-plt.stem(n_values[3:], values[3:], linefmt='r-', markerfmt='ro', basefmt='r-', label='n=3 to n=63')
+plt.stem(n_values[3:63], values[3:63], linefmt='r-', markerfmt='ro', basefmt='r-', label='n=3 to n=62')
 
 plt.title('Stem Plot of x(n) = 4n')
 plt.xlabel('n')

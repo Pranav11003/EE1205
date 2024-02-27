@@ -61,7 +61,7 @@ How many multiples of 4 lie between 10 and 250?\\
     \centering
     \input{tables/Table.Tex}
     \caption{Variables Used}
-    \label{tab:table_11.9.3.6}
+    \label{tab:10.5.2.14}
 \end{table}
 \begin{align}
     n&=\frac{(250-250 \text{ mod } 2)-(10+10\text{ mod } 2)}{4}+1\\
@@ -69,22 +69,22 @@ How many multiples of 4 lie between 10 and 250?\\
 \end{align}
 Considering the series to start from $n=0$,the general term is
 \begin{align}
-x(n)&=[x(0)+nd]u(n)\\
-x(n)&=4nu(n)
+x(n)&=(x(0)+nd)u(n)\\
+x(n)&=(12+4n)u(n)
 \end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/graph1.png}
-    \caption{stem plot for x(n)}
+    \caption{stem plot of x(n)}
 \end{figure}
 applying Z transform
 \begin{align}
     x(z)&= \sum_{n=-\infty}^{\infty}x(n) z^{-n}\\
-   \implies x(z)&= \sum_{n=-\infty}^{\infty} 4n u(n) z^{-n}\\
-   \implies x(z) &=\sum_{n= 0}^{\infty} 4n  z^{-n}\\
+   \implies x(z)&= \sum_{n=-\infty}^{\infty} (12+4n) u(n) z^{-n}\\
+   \implies x(z) &=\sum_{n= 0}^{\infty} (12+4n)  z^{-n}\\
    \end{align}
    \text{from } \ref{eq:11.9.5.26.2}\\
    \begin{align}
-   \implies x(z)&=\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
+   \implies x(z)&=\frac{12}{1-z^{-1}}+\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
 \end{align}
 \end{document}

@@ -8,10 +8,10 @@ with open('values.txt', 'r') as file:
 n_values = list(range(len(values)))
 
 # Plotting the stem plot
-plt.stem(n_values, values, linefmt='b-', markerfmt='bo', basefmt='b-', label='x(n) = 4n')
-plt.stem(n_values[3:63], values[3:63], linefmt='r-', markerfmt='ro', basefmt='r-', label='n=3 to n=62')
+plt.stem(n_values, values, linefmt='b-', markerfmt='bo', basefmt='b-', label='x(n) = 12 + 4n')
+plt.stem(n_values[:60], values[:60], linefmt='r-', markerfmt='ro', basefmt='r-', label='n=0 to n=59')
 
-plt.title('Stem Plot of x(n) = 4n')
+plt.title('Stem Plot of x(n) = 12 + 4n')
 plt.xlabel('n')
 plt.ylabel('x(n)')
 plt.legend()

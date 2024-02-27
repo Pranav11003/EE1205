@@ -8,7 +8,7 @@ int main() {
     }
 
     for (int n = 0; n <= 63; ++n) {
-        int xn = 4 * n;
+        int xn = 12 + 4 * n;
         fprintf(file, "%d\n", xn);
     }
 

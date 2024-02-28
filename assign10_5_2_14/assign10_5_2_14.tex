@@ -61,7 +61,7 @@ How many multiples of 4 lie between 10 and 250?\\
     \centering
     \input{tables/Table.Tex}
     \caption{Variables Used}
-    \label{tab:10.5.2.14}
+    \label{tab:table_11.9.3.6}
 \end{table}
 \begin{align}
     n&=\frac{(250-250 \text{ mod } 2)-(10+10\text{ mod } 2)}{4}+1\\
@@ -79,12 +79,9 @@ x(n)&=(12+4n)u(n)
 \end{figure}
 applying Z transform
 \begin{align}
-    x(z)&= \sum_{n=-\infty}^{\infty}x(n) z^{-n}\\
-   \implies x(z)&= \sum_{n=-\infty}^{\infty} (12+4n) u(n) z^{-n}\\
-   \implies x(z) &=\sum_{n= 0}^{\infty} (12+4n)  z^{-n}\\
-   \end{align}
-   \text{from } \ref{eq:11.9.5.26.2}\\
-   \begin{align}
-   \implies x(z)&=\frac{12}{1-z^{-1}}+\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
+    X(z)&= \sum_{n=-\infty}^{\infty}x(n) z^{-n}\\
+   \implies X(z)&= \sum_{n=-\infty}^{\infty} (12+4n) u(n) z^{-n}\\
+   \implies X(z) &=\sum_{n= 0}^{\infty} (12+4n)  z^{-n}\\
+   \implies X(z)&=\frac{12}{1-z^{-1}}+\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
 \end{align}
 \end{document}

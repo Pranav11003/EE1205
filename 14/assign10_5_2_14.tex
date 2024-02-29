@@ -1,3 +1,4 @@
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -57,9 +58,10 @@
 \textbf{Question}:
 How many multiples of 4 lie between 10 and 250?\\
 \solution
+\fi
 \begin{table}[h]
     \centering
-    \input{tables/Table.Tex}
+    \input{ncert-maths/10/5/2/14/tables/Table.Tex}
     \caption{Variables Used}
     \label{tab:table_11.9.3.6}
 \end{table}
@@ -74,7 +76,7 @@ x(n)&=(12+4n)u(n)
 \end{align}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1.1\linewidth]{figs/graph1.png}
+    \includegraphics[width=\linewidth]{ncert-maths/10/5/2/14/figs/graph1.png}
     \caption{stem plot of x(n)}
 \end{figure}
 applying Z transform
@@ -84,4 +86,4 @@ applying Z transform
    \implies X(z) &=\sum_{n= 0}^{\infty} (12+4n)  z^{-n}\\
    \implies X(z)&=\frac{12}{1-z^{-1}}+\frac{4 z^{-1}}{(1-z^{-1})^{2}}\quad \abs{z}>1
 \end{align}
-\end{document}
+%\end{document}

@@ -66,11 +66,10 @@ and (iii) the maximum speed of the mass
     
 \end{figure}\\
 \solution
-\begin{table}[h]
+\begin{table}[h!]
     \centering
     \input{tables/Table.Tex}
     \caption{Variables Used}
-    \label{tab:table_11.9.3.6}
 \end{table}
 at $t=0$
 \begin{align}
@@ -78,11 +77,28 @@ A&=A\sin{(w(0)+\phi)}\\
 \implies \phi&=\frac{\pi}{2}\\
 \implies x(t)&=A\cos{wt} 
 \end{align}
+\text{by appling laplase transform}
+\begin{align}
+X(s)&=\int_{-\infty}^{\infty} x(t)e^{-st}dt \\
+\implies X(s)&=-A\frac{s}{s^2+\omega^2}\\
+x^{'}(t)&=\frac{dx(t)}{dt}\\
+X^{'}(s)&=sX(s)-x(0)\\
+\implies X^{'}(s)&=-A\frac{\omega^2}{s^2+\omega^2}\\
+x^{''}(t)&=\frac{dx(t)}{dt}\\
+X^{''}(s)&=s^2X(s)-sx(0)-x^{'}(0)\\
+\implies X^{''}(s)&=-A\frac{s\omega^2}{s^2+\omega^2}
+\end{align}
+by using inverse laplase
+\begin{align}
+X^{'}(s)&=-A\frac{\omega^2}{s^2+\omega^2}\\
+\implies x^{'}(t)&=-A\omega\sin{\omega t}\\
+X^{''}(s)&=-A\frac{s\omega^2}{s^2+\omega^2}\\
+\implies x^{''}(t)&=-A\omega^2 \cos{wt}
+\end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/analog1.png}
-    \caption{Enter Caption}
-    \label{fig:enter-label}
+    \caption{plot of $x(t)$}
 \end{figure}\\
 (i) frequency of the oscillation
 \begin{align}
@@ -91,25 +107,24 @@ A&=A\sin{(w(0)+\phi)}\\
 \end{align}
 (iii)maximum speed of mass\\
 \begin{align}
-    x(t)&=0.02\cos{20t}\\
-    v(t)&=\frac{dx(t)}{dt}= -0.4\sin{20t}\\
-    v_{\text{max}}&=0.4m/s    
+    x^{'}(t)&=-A\omega\sin{\omega t}\\
+  x^{'}(t)_{\text{max}}&=A\omega\\
+    \implies x^{'}(t)_{\text{max}} &= 0.4 m/s
 \end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/analog2.png}
-    \caption{Enter Caption}
-    \label{fig:enter-label}
+    \caption{plot of $x^{'}(t)$}
 \end{figure}\\
 (ii)maximum accelaration of mass\\
 \begin{align}
-    a(t)&=\frac{dv(t)}{dt}=-8\cos{20t}\\
-    a_{max}&=8m/s^{2}
+   x^{''}(t)&=-A\omega^2 \cos{wt}\\
+    x^{''}(t)_{max}&=A\omega^2\\
+    x^{''}(t)_{max}&=8m/s^2
 \end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/analog3.png}
-    \caption{Enter Caption}
-    \label{fig:enter-label}
+    \caption{plot of $x^{''}(t)$}
 \end{figure}
 \end{document}

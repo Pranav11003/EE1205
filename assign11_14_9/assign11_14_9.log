@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  29 FEB 2024 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  3 MAR 2024 07:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1324,28 +1324,12 @@ File: figs/figure.jpg Graphic file (type jpg)
 Package pdftex.def Info: figs/figure.jpg  used on input line 64.
 (pdftex.def)             Requested size: 126.0pt x 59.65445pt.
  (./tables/table.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 <figs/analog1.png, id=8, 462.528pt x 346.896pt>
 File: figs/analog1.png Graphic file (type png)
 <use figs/analog1.png>
-Package pdftex.def Info: figs/analog1.png  used on input line 83.
-(pdftex.def)             Requested size: 277.20154pt x 207.91159pt.
-
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 83--84
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
-<figs/analog2.png, id=10, 462.528pt x 346.896pt>
-File: figs/analog2.png Graphic file (type png)
-<use figs/analog2.png>
-Package pdftex.def Info: figs/analog2.png  used on input line 100.
+Package pdftex.def Info: figs/analog1.png  used on input line 100.
 (pdftex.def)             Requested size: 277.20154pt x 207.91159pt.
 
 Overfull \hbox (25.20154pt too wide) in paragraph at lines 100--101
@@ -1353,51 +1337,72 @@ Overfull \hbox (25.20154pt too wide) in paragraph at lines 100--101
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--105
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-<figs/analog3.png, id=11, 462.528pt x 346.896pt>
-File: figs/analog3.png Graphic file (type png)
-<use figs/analog3.png>
-Package pdftex.def Info: figs/analog3.png  used on input line 111.
+<figs/analog2.png, id=10, 462.528pt x 346.896pt>
+File: figs/analog2.png Graphic file (type png)
+<use figs/analog2.png>
+Package pdftex.def Info: figs/analog2.png  used on input line 116.
 (pdftex.def)             Requested size: 277.20154pt x 207.91159pt.
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 111--112
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 116--117
  [][] 
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--120
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/figure.jpg> <./figs/analog1.png> <./figs/analog2.png>] [2
+ <./figs/figure.jpg>]
+<figs/analog3.png, id=45, 462.528pt x 346.896pt>
+File: figs/analog3.png Graphic file (type png)
+<use figs/analog3.png>
+Package pdftex.def Info: figs/analog3.png  used on input line 127.
+(pdftex.def)             Requested size: 277.20154pt x 207.91159pt.
 
- <./figs/analog3.png>]
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 127--128
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./figs/analog1.png> <./figs/analog2.png> <./figs/analog3.png>]
 (./assign11_14_9.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `assign11_14_9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31730 strings out of 476091
- 624913 string characters out of 5794082
- 1875330 words of memory out of 5000000
- 51419 multiletter control sequences out of 15000+600000
+ 31741 strings out of 476091
+ 625045 string characters out of 5794082
+ 1886330 words of memory out of 5000000
+ 51417 multiletter control sequences out of 15000+600000
  579682 words of font info for 171 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,11n,96p,1181b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,11n,96p,1181b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign11_14_9.pdf (2 pages, 241625 bytes).
+1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on assign11_14_9.pdf (2 pages, 245315 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

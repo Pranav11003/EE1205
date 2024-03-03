@@ -8,7 +8,7 @@ with open('data_a.txt', 'r') as file:
 # Plotting the graph
 time = np.arange(0, len(data_a), 1) / 1000.0  # Assuming a sampling rate of 1000 Hz
 plt.plot(time, data_a)
-plt.title('Graph of a(t) = -8cos(20t)')
+plt.title('x\'\'(t)')
 plt.xlabel('Time (s)')
 plt.ylabel('Amplitude')
 plt.grid(True)

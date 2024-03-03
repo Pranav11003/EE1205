@@ -73,26 +73,29 @@ and (iii) the maximum speed of the mass
 \end{table}
 at $t=0$
 \begin{align}
-A&=A\sin{(w(0)+\phi)}\\
+A&=A\sin{(\omega(0)+\phi)}\\
 \implies \phi&=\frac{\pi}{2}\\
-\implies x(t)&=A\cos{wt} 
+\implies x(t)&=A\cos{\omega t} 
 \end{align}
-\text{by appling laplase transform}
+\text{by appling laplace transform}
 \begin{align}
 X(s)&=\int_{-\infty}^{\infty} x(t)e^{-st}dt \\
 \implies X(s)&=-A\frac{s}{s^2+\omega^2}\\
-x^{'}(t)&=\frac{dx(t)}{dt}\\
-X^{'}(s)&=sX(s)-x(0)\\
-\implies X^{'}(s)&=-A\frac{\omega^2}{s^2+\omega^2}\\
-x^{''}(t)&=\frac{dx(t)}{dt}\\
-X^{''}(s)&=s^2X(s)-sx(0)-x^{'}(0)\\
-\implies X^{''}(s)&=-A\frac{s\omega^2}{s^2+\omega^2}
 \end{align}
-by using inverse laplase
+laplace transform of $x^{'}(t)=sX(s)-x(0)$
 \begin{align}
-X^{'}(s)&=-A\frac{\omega^2}{s^2+\omega^2}\\
+ \implies sX(s)-x(0)&=A\frac{s^2}{s^2+\omega^2}-A\\
+ \implies sX(s)-x(0)&=-A\frac{\omega^2}{s^2+\omega^2}\\
+\end{align}
+laplace transform of  $x^{''}(t)=s^2X(s)-sx(0)-x^{'}(0)$
+\begin{align}
+s^2X(s)-sx(0)-x^{'}(0)&=A\frac{s^3}{s^2+\omega^2}-As-0\\
+\implies s^2X(s)-sx(0)-x^{'}(0)&=-A\frac{s\omega^2}{s^2+\omega^2}\\
+\implies sX(s)-x(0)&=A\frac{\omega^2}{s^2+\omega^2}\\
+\end{align}
+by using inverse laplace
+\begin{align}
 \implies x^{'}(t)&=-A\omega\sin{\omega t}\\
-X^{''}(s)&=-A\frac{s\omega^2}{s^2+\omega^2}\\
 \implies x^{''}(t)&=-A\omega^2 \cos{wt}
 \end{align}
 \begin{figure}[h!]

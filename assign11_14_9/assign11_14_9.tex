@@ -80,23 +80,23 @@ A&=A\sin{(\omega(0)+\phi)}\\
 \text{by appling laplace transform}
 \begin{align}
 X(s)&=\int_{-\infty}^{\infty} x(t)e^{-st}dt \\
-\implies X(s)&=-A\frac{s}{s^2+\omega^2}\\
+\implies X(s)&=A\frac{s}{s^2+\omega^2}\\
 \end{align}
-laplace transform of $x^{'}(t)=sX(s)-x(0)$
+laplace transform of $x'(t)=sX(s)-x(0)$
 \begin{align}
  \implies sX(s)-x(0)&=A\frac{s^2}{s^2+\omega^2}-A\\
  \implies sX(s)-x(0)&=-A\frac{\omega^2}{s^2+\omega^2}\\
 \end{align}
-laplace transform of  $x^{''}(t)=s^2X(s)-sx(0)-x^{'}(0)$
+laplace transform of  $x'(t)=s^2X(s)-sx(0)-x^{'}(0)$
 \begin{align}
-s^2X(s)-sx(0)-x^{'}(0)&=A\frac{s^3}{s^2+\omega^2}-As-0\\
-\implies s^2X(s)-sx(0)-x^{'}(0)&=-A\frac{s\omega^2}{s^2+\omega^2}\\
+s^2X(s)-sx(0)-x'(0)&=A\frac{s^3}{s^2+\omega^2}-As-0\\
+\implies s^2X(s)-sx(0)-x'(0)&=-A\frac{s\omega^2}{s^2+\omega^2}\\
 \implies sX(s)-x(0)&=A\frac{\omega^2}{s^2+\omega^2}\\
 \end{align}
 by using inverse laplace
 \begin{align}
-\implies x^{'}(t)&=-A\omega\sin{\omega t}\\
-\implies x^{''}(t)&=-A\omega^2 \cos{wt}
+\implies x'(t)&=-A\omega\sin{\omega t}\\
+\implies x''(t)&=-A\omega^2 \cos{\omega t}
 \end{align}
 \begin{figure}[h!]
     \centering
@@ -110,24 +110,24 @@ by using inverse laplace
 \end{align}
 (iii)maximum speed of mass\\
 \begin{align}
-    x^{'}(t)&=-A\omega\sin{\omega t}\\
-  x^{'}(t)_{\text{max}}&=A\omega\\
-    \implies x^{'}(t)_{\text{max}} &= 0.4 m/s
+    x'(t)&=-A\omega\sin{\omega t}\\
+  x'(t)_{\text{max}}&=A\omega\\
+    \implies x'(t)\Bigr|_{max} &= 0.4 m/s
 \end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/analog2.png}
-    \caption{plot of $x^{'}(t)$}
+    \caption{plot of $x'(t)$}
 \end{figure}\\
 (ii)maximum accelaration of mass\\
 \begin{align}
-   x^{''}(t)&=-A\omega^2 \cos{wt}\\
-    x^{''}(t)_{max}&=A\omega^2\\
-    x^{''}(t)_{max}&=8m/s^2
+   x''(t)&=-A\omega^2 \cos{wt}\\
+    x''(t)_{max}&=A\omega^2\\
+    x''(t)\Bigr|_{max}&=8m/s^2
 \end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.1\linewidth]{figs/analog3.png}
-    \caption{plot of $x^{''}(t)$}
+    \caption{plot of $x''(t)$}
 \end{figure}
 \end{document}

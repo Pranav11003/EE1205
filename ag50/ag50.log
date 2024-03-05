@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  5 MAR 2024 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  5 MAR 2024 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1329,11 +1329,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
-
-Overfull \hbox (79.6672pt too wide) detected at line 99
-[]
- []
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1344,7 +1339,7 @@ Package rerunfilecheck Info: File `ag50.out' has not changed.
 Here is how much of TeX's memory you used:
  31712 strings out of 476091
  624303 string characters out of 5794082
- 1892330 words of memory out of 5000000
+ 1891330 words of memory out of 5000000
  51392 multiletter control sequences out of 15000+600000
  582374 words of font info for 175 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1355,7 +1350,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ag50.pdf (1 page, 44780 bytes).
+Output written on ag50.pdf (1 page, 44631 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream

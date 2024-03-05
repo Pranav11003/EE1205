@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  4 MAR 2024 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  5 MAR 2024 06:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,7 +1343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
 
  <./figs/figure.jpg> <./figs/analog1.png>]
-<figs/analog2.png, id=43, 462.528pt x 346.896pt>
+<figs/analog2.png, id=40, 462.528pt x 346.896pt>
 File: figs/analog2.png Graphic file (type png)
 <use figs/analog2.png>
 Package pdftex.def Info: figs/analog2.png  used on input line 119.
@@ -1358,7 +1358,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--123
 
  []
 
-<figs/analog3.png, id=44, 462.528pt x 346.896pt>
+<figs/analog3.png, id=41, 462.528pt x 346.896pt>
 File: figs/analog3.png Graphic file (type png)
 <use figs/analog3.png>
 Package pdftex.def Info: figs/analog3.png  used on input line 130.
@@ -1376,9 +1376,9 @@ Package rerunfilecheck Info: File `assign11_14_9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31741 strings out of 476091
- 625045 string characters out of 5794082
- 1884330 words of memory out of 5000000
+ 31738 strings out of 476091
+ 625006 string characters out of 5794082
+ 1881330 words of memory out of 5000000
  51417 multiletter control sequences out of 15000+600000
  579682 words of font info for 171 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1390,10 +1390,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign11_14_9.pdf (2 pages, 239084 bytes).
+Output written on assign11_14_9.pdf (2 pages, 239005 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 31 named destinations out of 1000 (max. 500000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

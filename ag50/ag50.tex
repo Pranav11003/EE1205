@@ -1,0 +1,101 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{caption}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{10.5.2.14}
+\author{EE23BTECH11003 - pranav}
+\maketitle
+\newpage
+
+\bigskip
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+
+\textbf{Question}:Given that $\frac{dy}{dx}=2x+y$ and $y=1$,when $x=0$ Using Runge-Kutta fourth order method,the value of $y$ at $x=0.2$ is \hfill(GATE 2023 AG 50) 
+\solution\\
+By using runge kutta 4 th order method\\
+\begin{table}[h]
+    \centering
+    \input{tables/Table.Tex}
+    \caption{Variables Used}
+    \label{ag:50}
+\end{table}
+\begin{align}
+    y_{n+1}&= y_{n}+\frac{h}{6}(k_1+2k_2+2k_3+k_4)\\
+    x_{n+1}&=x_{n}+h\\
+    k_1&=f(x_n,y_n)\\
+    k_2&=f(x_n+\frac{h}{2},y_n+h\frac{k_1}{2})\\
+    k_3&=f(x_n+\frac{h}{2},y_n+h\frac{k_2}{2})\\
+    k_4&=f(x_n+h,y_n+hk_3)
+\end{align}
+assume step size as $0.1$ and initial conditions as $x=0$ and $y=1$\\
+\begin{align}
+    k_1&=2(0)+1=1\\
+    k_2&=2(0+\frac{0.1}{2})+(1+\frac{0.1}{2})\\
+    \implies k_2&= 1.15\\
+    k_3&=2(0+\frac{0.1}{2})+(1+\frac{0.115}{2})\\
+    \implies k_3&=1.1575\\
+    k_4&=2(0+0.1)+(1+0.11575)\\
+    \implies k_4&=1.3158\\
+    y_{n+1}&=1+\frac{0.1}{6}(1+2.30+2.315+1.3158)\\
+    \implies y_{n+1}&=1.1155\\
+    x_{n+1}&=0.1
+\end{align}
+cosidering outputs of last iteration as inputs of next iteration\\
+\begin{align}
+    k_1&=2(0.1)+1=1.2\\
+    k_2&=2(0.1+\frac{0.1}{2})+(1.1155+\frac{0.12}{2})\\
+    \implies k_2&= 1.4755\\
+    k_3&=2(0.1+\frac{0.1}{2})+(1.1155+\frac{0.1475}{2})\\
+    \implies k_3&=2.1532\\
+    k_4&=2(0.1+0.1)+(1+2.1532)\\
+    \implies k_4&=3.5532\\
+     y_{n+1}&=1+\frac{0.1}{6}(1.2+2\cdot1.4755+2\cdot2.1532+3.5532)\\
+     \implies y_{n+1}&=1.2201\\
+     x_{n+1}&=0.2
+\end{align}
+so at $x=0.2$ value of $y$ is $1.2201$
+\end{document}

@@ -64,12 +64,12 @@ By using runge kutta 4 th order method\\
     \label{ag:50}
 \end{table}
 \begin{align}
-    y_{n+1}&= y_{n}+\frac{h}{6}(k_1+2k_2+2k_3+k_4)\\
-    x_{n+1}&=x_{n}+h\\
-    k_1&=f(x_n,y_n)\\
-    k_2&=f(x_n+\frac{h}{2},y_n+h\frac{k_1}{2})\\
-    k_3&=f(x_n+\frac{h}{2},y_n+h\frac{k_2}{2})\\
-    k_4&=f(x_n+h,y_n+hk_3)
+    y(n+1)&= y(n)+\frac{h}{6}(k_1+2k_2+2k_3+k_4)\\
+    x(n+1)&=x(n)+h\\
+    k_1&=f(x(n),y(n))\\
+    k_2&=f(x(n)+\frac{h}{2},y(n)+h\frac{k_1}{2})\\
+    k_3&=f(x(n)+\frac{h}{2},y(n)+h\frac{k_2}{2})\\
+    k_4&=f(x(n)+h,y(n)+hk_3)
 \end{align}
 assume step size as $0.1$ and initial conditions as $x=0$ and $y=1$\\
 \begin{align}
@@ -80,9 +80,9 @@ assume step size as $0.1$ and initial conditions as $x=0$ and $y=1$\\
     \implies k_3&=1.1575\\
     k_4&=2(0+0.1)+(1+0.11575)\\
     \implies k_4&=1.3158\\
-    y_{n+1}&=1+\frac{0.1}{6}(1+2.30+2.315+1.3158)\\
-    \implies y_{n+1}&=1.1155\\
-    x_{n+1}&=0.1
+    y(n)&=1+\frac{0.1}{6}(1+2.30+2.315+1.3158)\\
+    \implies y(n)&=1.1155\\
+    x(n+1)&=0.1
 \end{align}
 cosidering outputs of last iteration as inputs of next iteration\\
 \begin{align}
@@ -93,9 +93,26 @@ cosidering outputs of last iteration as inputs of next iteration\\
     \implies k_3&=2.1532\\
     k_4&=2(0.1+0.1)+(1.1155+2.1532)\\
     \implies k_4&=3.6687\\
-     y_{n+1}&=1.1155+\frac{0.1}{6}(1.3155+7.014+3.6687)\\
-     \implies y_{n+1}&=1.319\\
-     x_{n+1}&=0.2
+    y(n) &=1.1155+\frac{0.1}{6}(1.3155+7.014+3.6687)\\
+     \implies y(n)&=1.319\\
+     x(n+1)&=0.2
 \end{align}
-so at $x=0.2$ value of $y$ is $1.319$
+so at $x=0.2$ value of $y$ is $1.319$\\
+analysis
+\begin{align}
+\frac{dy}{dx}&=2x+y\\
+ye^{-x}&=\int2xe^{-x}dx\\
+\implies ye^{-x}&=-2(x+1)e^{-x}+c
+\end{align}
+by using intial conditions
+\begin{align}
+c=3\\
+\implies y=3e^x-2(x+1)
+\end{align}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.1\linewidth]{figs/analysis.png}
+    \caption{analysis of runge kutta method}
+    \label{ag50.1}
+\end{figure}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  7 MAR 2024 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  7 MAR 2024 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,12 +1163,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-No file assign11_9_3_25.aux.
+(./assign11_9_3_25.aux)
 \openout1 = `assign11_9_3_25.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 43.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1280,6 +1281,8 @@ LaTeX Info: Redefining \ohm on input line 43.
 Package gensymb Info: Using \textohm for \ohm on input line 43.
 Package gensymb Info: Using \textmu for \micro on input line 43.
 Package hyperref Info: Link coloring OFF on input line 43.
+
+(./assign11_9_3_25.out) (./assign11_9_3_25.out)
 \@outlinefile=\write5
 \openout5 = `assign11_9_3_25.out'.
 
@@ -1314,27 +1317,23 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) (./tables/table.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) (./tables/table.tex)
+Overfull \hbox (79.25934pt too wide) detected at line 72
+[]
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ] (./assign11_9_3_25.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `assign11_9_3_25.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `assign11_9_3_25.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `assign11_9_3_25.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31681 strings out of 476091
- 624083 string characters out of 5794082
- 1864330 words of memory out of 5000000
+ 31687 strings out of 476091
+ 624203 string characters out of 5794082
+ 1865330 words of memory out of 5000000
  51392 multiletter control sequences out of 15000+600000
  579622 words of font info for 171 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1345,7 +1344,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign11_9_3_25.pdf (1 page, 40022 bytes).
+Output written on assign11_9_3_25.pdf (1 page, 40083 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  8 MAR 2024 10:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  8 MAR 2024 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1317,46 +1317,59 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) (./tables/table.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Overfull \hbox (126.00421pt too wide) detected at line 68
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (73.17644pt too wide) detected at line 73
+[]
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
+ []
+
+
+Overfull \hbox (283.94154pt too wide) detected at line 78
+[]
+ []
+
+<figs/grap.png, id=7, 722.7pt x 361.35pt>
+File: figs/grap.png Graphic file (type png)
+<use figs/grap.png>
+Package pdftex.def Info: figs/grap.png  used on input line 94.
+(pdftex.def)             Requested size: 277.20154pt x 138.59912pt.
+
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 94--95
+ [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<figs/analysis.png, id=45, 722.7pt x 433.62pt>
-File: figs/analysis.png Graphic file (type png)
-<use figs/analysis.png>
-Package pdftex.def Info: figs/analysis.png  used on input line 115.
-(pdftex.def)             Requested size: 277.20154pt x 166.31895pt.
+ <./figs/grap.png>]
+(./ag50.aux)
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 115--116
- [][] 
- []
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-[2
-
- <./figs/analysis.png>] (./ag50.aux)
 Package rerunfilecheck Info: File `ag50.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31727 strings out of 476091
- 624565 string characters out of 5794082
- 1894330 words of memory out of 5000000
- 51401 multiletter control sequences out of 15000+600000
+ 31703 strings out of 476091
+ 624237 string characters out of 5794082
+ 1875330 words of memory out of 5000000
+ 51400 multiletter control sequences out of 15000+600000
  579682 words of font info for 171 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,10n,96p,1172b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,10n,96p,1172b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1364,10 +1377,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ag50.pdf (2 pages, 76172 bytes).
+Output written on ag50.pdf (1 page, 73719 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 36 named destinations out of 1000 (max. 500000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -64,12 +64,13 @@ By using runge kutta 4 th order method\\
     \label{ag:50}
 \end{table}
 \begin{align}
-    y(n+1)&= y(n)+\frac{h}{6}(k_1+2k_2+2k_3+k_4)\\
-    x(n+1)&=x(n)+h\\
-    k_1&=f(x(n),y(n))\\
-    k_2&=f(x(n)+\frac{h}{2},y(n)+h\frac{k_1}{2})\\
-    k_3&=f(x(n)+\frac{h}{2},y(n)+h\frac{k_2}{2})\\
-    k_4&=f(x(n)+h,y(n)+hk_3)
+\frac{y_{n}-y_{n-1}}{h}=2x(n-1)+y(n-1)u(nh)\\
+y(n)= y(n-1)+\frac{h}{6}(k_1+2k_2+2k_3+k_4)\\
+    x(n)=x(n-1)+h
+    k_1=2x(n-1)+y(n-1)u(nh)\\
+    k_2=2(x(n-1)+\frac{h}{2})+(y(n-1)+\frac{k_{1}}{2})u(n+\frac{h}{2})\\
+    k_3=2(x(n-1)+\frac{h}{2})+(y(n-1)+\frac{k_{2}}{2})u(n+\frac{h}{2})\\
+    k_4=2(x(n-1)+h)+(y(n-1)+k_{3})u(n+h))
 \end{align}
 assume step size as $0.1$ and initial conditions as $x=0$ and $y=1$\\
 \begin{align}
@@ -82,7 +83,7 @@ assume step size as $0.1$ and initial conditions as $x=0$ and $y=1$\\
     \implies k_4&=1.3158\\
     y(n)&=1+\frac{0.1}{6}(1+2.30+2.315+1.3158)\\
     \implies y(n)&=1.1155\\
-    x(n+1)&=0.1
+    x(n)&=0.1
 \end{align}
 cosidering outputs of last iteration as inputs of next iteration\\
 \begin{align}
@@ -95,7 +96,7 @@ cosidering outputs of last iteration as inputs of next iteration\\
     \implies k_4&=3.6687\\
     y(n) &=1.1155+\frac{0.1}{6}(1.3155+7.014+3.6687)\\
      \implies y(n)&=1.319\\
-     x(n+1)&=0.2
+     x(n)&=0.2
 \end{align}
 so at $x=0.2$ value of $y$ is $1.319$\\
 analysis
